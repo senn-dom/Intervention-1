@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800020;
+    padding: 15px 30px;
+    height: 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 2s;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+.background-image {
+    width: 100%;
+    height: 400px;
+    background-image: url(./me.jpg.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 35x;
+    padding-left: 20px;
+    color: white;
+    position: relative;
+}
+
+/*Background-Image*/
+.background-image::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+    content: "";
+}
+
+.background-content {
+    position: relative;
+    max-width: 450px;
+    z-index: 2;
+}
+
+.background-content p {
+    color: white;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Section */
+.section-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #530803;
+    padding: 15px 30px;
+    height: 30px;
+    width: 800px;
+    margin-top: 50px;
+    text-align: center;
+
+    clip-path: polygon(0% 0%,
+            100% 0%,
+            90% 100%,
+            10% 100%);
+}
+
+.section-text {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*My Favorite Movies*/
+.movies {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.favmovie {
+    width: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.favmovie h2 {
+    color: white;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.favmovie img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 40px darkred;
+}
+
+.favmovie p {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/*The Love of My Life - Section*/
+.loml {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.loml2 {
+    width: 800px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.loml2 h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.loml2 img {
+    width: 800px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 40px pink;
+}
+
+.loml2 p {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/*My Hobbies*/
+.hobbies {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.hobbies2 {
+    width: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.hobbies2 h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.hobbies2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 40px rgb(101, 0, 0);
+}
+
+.hobbies2 p {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/*Footer*/
+.footer {
+    background-color: rgb(100, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0px 40px;
+    height: 80px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    padding: 60px 0px 0px 10px;
+    height: 100px;
+    width: auto;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-socials a {
+    color: white;
+    margin-left: 15px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 20px;
+    font-size: 12px;
+    color: white;
+}
